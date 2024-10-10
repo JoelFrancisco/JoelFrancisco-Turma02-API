@@ -4,7 +4,7 @@ import { SimpleReporter } from '../simple-reporter';
 import data from '../data/data.json';
 
 describe('Echo validation', () => {
-  const p = pactum;
+  const p = pactum; 
   const rep = SimpleReporter;
   const baseUrl = 'https://httpbin.org';
 
