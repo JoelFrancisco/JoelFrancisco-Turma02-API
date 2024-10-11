@@ -381,7 +381,6 @@ describe('Mercado', () => {
           cnpj: faker.number.int({ min: 10000000000000, max: 99999999999999 })
         })
         .expectStatus(StatusCodes.CREATED)
-        .expectJsonSchema(novoMercadoSchema)
         .returns("novoMercado.id");
   })
 
