@@ -1,39 +1,44 @@
-# API test automation with Jest and PactumJS
+# Trabalho 02 Automação de testes - Testes de API 
 
-> Simple integration between JestJS and PactumJS.
+## Github Actions
 
-## GitHub Actions
+[![Build and Tests](https://github.com/JoelFrancisco/JoelFrancisco-Turma02-API/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/JoelFrancisco/JoelFrancisco-Turma02-API/actions/workflows/node.js.yml)
 
-[![Node.js CI](https://github.com/ugioni/integration-tests-jest/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/ugioni/integration-tests-jest/actions/workflows/node.js.yml)
+O projeto possui um job no github actions para a execução dos testes em pipeline.
 
-## SonarCloud
+## Sobre o projeto
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ugioni_integration-tests-jest&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ugioni_integration-tests-jest)
+O projeto foi desenvolvido como o segundo trabalho da disciplina de Automação de Testes do curso de Engenharia de Software - SATC 
 
-# Getting Started
+O objetivo era aprender o uso de testes de API com o framework PactumJS, uma poderosa ferramenta para testes de API em typescript.
 
-### Pactum docs:
- - [PactumJS](https://pactumjs.github.io/)
+## Pré requisitos para execução
 
-### Prerequisites:
- - NodeJS `v20`
+- Nodejs versão >= 20.x
+    (https://nodejs.org/en/download/package-manager/current)
 
-### How to run?
+## Como executar
 
-Inside of the project folder run:
+Instale as dependências:
 
- 1. `npm install --save-dev`
- 1. `npm run ci`
+```
+npm install
+```
 
-After that you should see a `./output` folder with some `HTML` reports.
+Rode os testes:
 
-### Docs to Api under tests:
- - [API Company / Mercado](https://api-desafio-qa.onrender.com/docs/)
- - [Deck of Cards](https://deckofcardsapi.com/)
- - [JSON placeholder](https://jsonplaceholder.typicode.com/)
- - [http bin](http://httpbin.org/)
- - [rick and morty api](https://rickandmortyapi.com/documentation/#rest)
- - [Petstore](https://petstore.swagger.io/#/) 
- - [ServeRest](https://serverest.dev/#/)
- - [ServeRest - Datadog](https://p.datadoghq.eu/sb/421fcfee-35ec-11ee-b87f-da7ad0900005-2aaf85264a89d11b7001bcab452a266e?refresh_mode=sliding&theme=light&tpl_var_env%5B0%5D=serverest.dev&from_ts=1699931511294&to_ts=1699932411294&live=true)
- 
+```
+npm run test
+```
+
+Os artefatos gerados podem ser encontrados em ./output e podem ser removidos com:
+
+```
+npm run clean
+```
+
+## Feito por
+
+**Criado por:** Joel Francisco da Silva Filho
+
+Com base no reposítorio fornecido pelo professor Leandro Ugioni, disponível em: https://github.com/ugioni/integration-tests-jest
